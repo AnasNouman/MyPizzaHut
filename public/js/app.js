@@ -78061,7 +78061,7 @@ function (_Component) {
       };
       console.log("OKAY1234");
       console.log(orders);
-      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('http://127.0.0.1:8000/myorders/store', orders).then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('postgres://epbimxrtsvvfgi:5aae576f86dbcc18a7df1baca2db6fc59f2144faade5ead866d78ab298f26fe2@ec2-23-23-182-18.compute-1.amazonaws.com:5432/dbuvmufml5fko4', orders).then(function (res) {
         return Console.log(res.data);
       });
       alert("Thank you for confirming the order");
