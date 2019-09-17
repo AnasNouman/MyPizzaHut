@@ -78061,7 +78061,7 @@ function (_Component) {
       };
       console.log("OKAY1234");
       console.log(orders);
-      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('https://obscure-sands-42029.herokuapp.com/cart').then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('http://127.0.0.1:8000/myorders/store', orders).then(function (res) {
         return Console.log(res.data);
       });
       alert("Thank you for confirming the order");
