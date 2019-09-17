@@ -78004,8 +78004,6 @@ function (_Component) {
     value: function store_quantity(item) {
       var value = item.target.value;
       var name = item.target.name;
-      console.log("OMG");
-      console.log(name);
       this.setState({
         order: this.props.location.state.name
       });
@@ -78059,7 +78057,6 @@ function (_Component) {
         price: this.state.price,
         address: this.state.address
       };
-      console.log("OKAY1234");
       console.log(orders);
       axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('http://127.0.0.1:8000/myorders/store', orders).then(function (res) {
         return Console.log(res.data);
