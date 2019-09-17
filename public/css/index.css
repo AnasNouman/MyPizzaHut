@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*background-color: #FEF4C8;*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.btn{
+  margin-top: 10px;
+}
+.heading{
+	text-decoration: none;
+	color: black;
+}
+.myhead{
+	text-align:center;
+	text-decoration: none;
+}
+.cart{
+	float: right;
+	/*margin-right: 30px;*/
+	text-decoration: none;
+	color: black;
+	background-color: #F5F5F5;
+	width: 30px;
+	height: 30px;
+
+}
+.buttons{
+	font-style: italic;
+}
+.cart:hover{
+animation: ease-in;
+}
+.images{
+		display: inline-block;
+}
+.image{
+
+	width: 100px;
+	height: 100px;
+}
+.item{
+	background-color: #F5F5F5;
+	width: 95%;
+	 box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+	 margin-bottom: 20px;
+}
+.all_items{
+	  display: flex;
+  flex-direction: column;
+}
+.total-price{
+	margin-left: 90%;
+}
+.quant{
+	width: 20px;
+}
