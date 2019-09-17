@@ -67,7 +67,7 @@ return [
             ]) : [],
         ],
 
-        'pgsql' => [
+        'pgsql_production' => [
             'driver' => 'pgsql',
             'host' => $DATABASE_URL["host"],
             'port' => $DATABASE_URL["port"],
@@ -80,7 +80,7 @@ return [
             'sslmode' => 'require',
         ],
 
-        'pgsql_production' => [
+        'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
