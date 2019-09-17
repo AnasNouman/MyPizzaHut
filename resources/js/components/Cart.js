@@ -64,10 +64,7 @@ export default class Cart extends Component {
         console.log("OKAY1234");
         console.log(orders);
         axios
-            .post(
-                "postgres://epbimxrtsvvfgi:5aae576f86dbcc18a7df1baca2db6fc59f2144faade5ead866d78ab298f26fe2@ec2-23-23-182-18.compute-1.amazonaws.com:5432/dbuvmufml5fko4",
-                orders
-            )
+            .post("http://127.0.0.1:8000/myorders/store", orders)
             .then(res => Console.log(res.data));
         alert("Thank you for confirming the order");
         this.props.history.push("/");
