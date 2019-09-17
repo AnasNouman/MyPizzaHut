@@ -1,6 +1,9 @@
 <?php
 
-use Illuminate\Support\Str;
+// use Illuminate\Support\Str;
+
+$DATABASE_URL = parse_url("//epbimxrtsvvfgi:5aae576f86dbcc18a7df1baca2db6fc59f2144faade5ead866d78ab298f26fe2@ec2-23-23-182-18.compute-1.amazonaws.com:5432/dbuvmufml5fko4");
+
 
 return [
 
@@ -15,7 +18,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql_production'),
 
 
     /*
@@ -66,6 +69,19 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
+            'host' => $DATABASE_URL["host"],
+            'port' => $DATABASE_URL["port"],
+            'database' => ltrim($DATABASE_URL["path"], "/"),
+            'username' => $DATABASE_URL["user"],
+            'password' => $DATABASE_URL["pass"],
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+            'sslmode' => 'require',
+        ],
+
+        'pgsql_production' => [
+            'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
@@ -78,6 +94,8 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
+
+
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
