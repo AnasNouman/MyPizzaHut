@@ -78058,7 +78058,7 @@ function (_Component) {
         address: this.state.address
       };
       console.log(orders);
-      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('http://127.0.0.1:8000/myorders/store', orders).then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('http://https://obscure-sands-42029.herokuapp.com//myorders/store', orders).then(function (res) {
         return Console.log(res.data);
       });
       alert("Thank you for confirming the order");

@@ -64,7 +64,7 @@ export default class Cart extends Component {
         console.log("OKAY1234");
         console.log(orders);
         axios
-            .post("http://127.0.0.1:8000/myorders/store", orders)
+            .post("http://https://obscure-sands-42029.herokuapp.com//myorders/store", orders)
             .then(res => Console.log(res.data));
         alert("Thank you for confirming the order");
         this.props.history.push("/");
