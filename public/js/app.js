@@ -78045,7 +78045,7 @@ function (_Component) {
       // console.log(this.props.location.state.quantity);
       // console.log(this.state.address);
       //
-      // console.log("OKAY");
+      console.log("OKAY");
       // console.log(this.state);
 
       var orders = {
